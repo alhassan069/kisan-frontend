@@ -5,7 +5,7 @@ import { mobile } from "../styledC/responsive";
 
 const Container = styled.div`
   height: 60px;
-  ${mobile({ height: "50px" })}
+  ${mobile({ height: "50px", width: "100%" })}
 `;
 
 const Wrapper = styled.div`
@@ -31,7 +31,7 @@ const Center = styled.div`
 const Logo = styled.img`
   font-weight: bold;
   max-height: 60px;
-  ${mobile({ fontSize: "24px" })}
+  ${mobile({ fontSize: "24px", "max-height": "30px" })}
 `;
 const Right = styled.div`
   flex: 1;
