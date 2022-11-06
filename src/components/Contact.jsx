@@ -60,7 +60,7 @@ const Input = styled.textarea`
   border-bottom: 1px solid #ddd;
   border-left: 0;
   transition: border-bottom-color 0.25s ease-in;
-
+  ${mobile({ fontSize: "11px", padding: "0px" })}
   &:focus {
     border-bottom-color: #228b22;
     outline: 0;
@@ -72,6 +72,7 @@ const InputFieldset = styled.fieldset`
   margin: 0;
   border: 0;
   height: 25vh;
+  ${mobile({ fontSize: "11px", padding: "0px" })}
 
   & + & {
     margin-top: 10px;

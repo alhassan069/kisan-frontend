@@ -1,7 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
+import styled from "styled-components";
+import { mobile } from "../styledC/responsive";
 import {
-  CardWrapper,
   CardHeader,
   CardHeading,
   CardBody,
@@ -9,6 +10,17 @@ import {
   CardInput,
   CardButton,
 } from "../styledC/cards";
+
+const CardWrapper = styled.div`
+  overflow: hidden;
+  padding: 0 0 32px;
+  margin: 48px auto 0;
+  width: 300px;
+  font-family: Quicksand, arial, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  ${mobile({ width: "70%", padding: "0 0 16px" })}
+`;
 
 const CreateContacts = () => {
   const [name, setName] = useState("");

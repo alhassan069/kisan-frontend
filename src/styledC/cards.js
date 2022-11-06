@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { mobile } from "./responsive";
 
 export const CardWrapper = styled.div `
   overflow: hidden;
@@ -9,11 +10,13 @@ export const CardWrapper = styled.div `
   font-family: Quicksand, arial, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
+  ${mobile({ width: "100%", "padding": "0px" })}
 `;
 
 export const CardHeader = styled.header `
   padding-top: 32px;
   padding-bottom: 32px;
+  ${mobile({ fontSize: "18px", "padding": "0px" })}
 `;
 
 export const CardHeading = styled.h1 `
@@ -25,6 +28,7 @@ export const CardHeading = styled.h1 `
 export const CardBody = styled.div `
   padding-right: 32px;
   padding-left: 32px;
+  ${mobile({ fontSize: "18px", "padding": "0px" })}
 `;
 
 export const CardFieldset = styled.fieldset `
